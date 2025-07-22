@@ -1,10 +1,23 @@
 .sec_sp {
-    margin-bottom: calc(3rem + 5.128vw)
+    margin-bottom: calc(3rem + 5.128vw);
+}
+
+/* Fix: Override Bootstrap table background */
+.table {
+    background-color: transparent !important;
+    border-color: var(--secondary-color);
 }
 
 .table td,
 .table th {
-    color: var(--text-color);
+    background-color: transparent !important;
+    color: var(--text-color) !important;
+    border-color: var(--secondary-color);
+}
+
+/* Optional: better row separation */
+.table tr {
+    border-bottom: 1px solid var(--secondary-color);
 }
 
 .t_border {
@@ -70,9 +83,7 @@
     padding-bottom: 4px;
 }
 
-
 /*! CSS Used keyframes */
-
 @-webkit-keyframes fadeInUp {
     0% {
         opacity: 0;
